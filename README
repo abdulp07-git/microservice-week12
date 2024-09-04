@@ -1,0 +1,9 @@
+IMPORTANT: service name is hard coded in the ingress session of values.yaml. Therefor make sure release have the same name of helm chart directory
+
+helm install mavenapp
+helm install nginx
+attache index.html to nginx deployment pod using
+kubectl cp index.html nginx-pod:/usr/share/nginx/html
+
+ingress configured in mavenapp/values.yaml
+check mavenapp/template/ingress.yaml too
